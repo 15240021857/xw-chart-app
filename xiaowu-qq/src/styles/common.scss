@@ -1,0 +1,29 @@
+page {
+  box-sizing: content-box;
+  padding-bottom: 0 !important;
+  padding-bottom: constant(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+  padding-top: 0 !important;
+  padding-top: constant(safe-area-inset-top) !important;
+  padding-top: env(safe-area-inset-top) !important;
+}
+// 按钮禁用样式
+uni-button[disabled] {
+  box-shadow: none !important;
+}
+uni-button[disabled][type="default"],
+uni-button[disabled]:not([type]) {
+  background-color: $xw-btn-disibled-color !important;
+  color: #fff !important;
+}
+uni-button:after {
+  border: none !important;
+}
+
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100rpx;
+  color: $xw-no-data-color;
+}
